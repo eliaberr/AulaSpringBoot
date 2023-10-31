@@ -1,7 +1,17 @@
 package br.com.fatec.hellospringboot.entities;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "TBL_CLIENT")
+
 public class Client {
+    
+    @Id 
     private int id;
+    
     private String name;
     private double balance;
     
